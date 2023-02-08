@@ -9,7 +9,7 @@ class Pachd < Formula
   depends_on "etcd"
 
   def install
-    bin.install "pach-suite" => "pach-suite"
+    bin.install "pach-suite"
   end
 
   service do
