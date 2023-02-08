@@ -2,7 +2,7 @@ require "formula"
 
 class Pachd < Formula
   homepage "github.com/pachyderm/pachyderm"
-  version "v2.4.2"
+  version "v2.4.3"
     
   def install
     #bin.install buildpath/"pachd"
