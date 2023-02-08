@@ -4,7 +4,7 @@ class Pachd < Formula
   homepage "github.com/pachyderm/pachyderm"
   version "v2.4.3"
   url "https://github.com/acohen4/pach-suite/blob/master/pach-suite"
-  sha256 "c92c6e5ab133aa12a34b0ac929fede7d89af198ad2572c9a4229d757ff574c2e"
+  sha256 "12efc4c18daaa283dbd6e334386496a308df2d19b3131e9b8d21e26908b1482e"
 
   depends_on "postgresql"
   depends_on "etcd"
