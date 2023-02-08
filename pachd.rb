@@ -9,11 +9,11 @@ class Pachd < Formula
   depends_on "etcd"
 
   def install
-    bin.install "pach-suite.sh" => "suite"
+    bin.install "pach-suite" => "pach-suite"
   end
 
   service do
-    run opt_bin/"suite"
+    run opt_bin/"pach-suite"
   end 
 
   test do
