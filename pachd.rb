@@ -14,7 +14,7 @@ class Pachd < Formula
   end
 
   service do
-    run["brew services run postgresql"]
+    run["etcd"]
   end 
 
   test do
