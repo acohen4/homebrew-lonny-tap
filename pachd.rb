@@ -6,7 +6,7 @@ class Pachd < Formula
   url "https://github.com/pachyderm/pachyderm/blob/master/etc/reset.py"
   sha256 "c9ebb13a579708bcf236fa01ddcfb66b486a12ca0df523584ba5377d96c40a8b"
 
-  depends_on "postgres"
+  depends_on "postgresql"
   depends_on "etcd"
 
   def install
