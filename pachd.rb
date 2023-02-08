@@ -14,7 +14,7 @@ class Pachd < Formula
   end
 
   service do
-    run[opt_bin/"etcd"]
+    run opt_bin/"etcd"
   end 
 
   test do
