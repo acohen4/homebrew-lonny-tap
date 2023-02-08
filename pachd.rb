@@ -14,7 +14,7 @@ class Pachd < Formula
   end
 
   service do
-    run ["echo hello", "echo hey"]
+    run["brew services run postgresql", "etcd"]
   end 
 
   test do
