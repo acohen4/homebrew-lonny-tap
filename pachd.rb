@@ -6,7 +6,7 @@ class Pachd < Formula
   homepage "https://github.com/acohen4/pach-suite"
   version "v2.4.3"
   url "https://github.com/acohen4/pach-suite/blob/main/bin/pach.zip"
-  sha256 "1c60d4118fc975d83bc6ca5718c08fae592113d33636ae991ce412c687684a74"
+  sha256 "66dcb7e8ded2b1f51b647381846f948d821c17951dd708c88801706e9270b12e"
 
   depends_on "postgresql"
   depends_on "etcd"
