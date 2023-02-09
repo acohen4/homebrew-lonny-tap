@@ -12,7 +12,7 @@ class Pachd < Formula
   depends_on "etcd"
 
   def install
-    bin.install "pach-suite"
+    bin.install "pach-suite" => "pachd"
   end
 
   def suite_log_path
@@ -20,7 +20,7 @@ class Pachd < Formula
   end
   
   service do
-    run bin/"pach-suite"
+    run bin/"pachd"
     log_path f.suite_log_path
     error_log_path f.suite_log_path
   end 
