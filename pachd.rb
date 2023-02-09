@@ -15,6 +15,8 @@ class Pachd < Formula
 
   service do
     run bin/"pach-suite"
+    log_path "/tmp/local.job.out"
+    error_log_path "/tmp/local.job.err"
   end 
 
   test do
