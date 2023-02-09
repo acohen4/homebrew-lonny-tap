@@ -20,7 +20,7 @@ class Pachd < Formula
   end
   
   service do
-    run bin/"pachd"
+    run "pachd"
     log_path f.suite_log_path
     error_log_path f.suite_log_path
   end 
