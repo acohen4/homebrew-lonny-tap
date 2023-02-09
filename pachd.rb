@@ -14,7 +14,7 @@ class Pachd < Formula
   end
 
   service do
-    run opt_bin/"pach-suite"
+    run bin/"pach-suite"
   end 
 
   test do
