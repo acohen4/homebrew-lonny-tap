@@ -14,14 +14,8 @@ class Pachd < Formula
   def install
     bin.install "pach-suite" => "pachd"
   end
-
-  def suite_log_path
-    var/"log/suite.log"
-  end
   
   service do
-    run "pachd"
-    log_path f.suite_log_path
-    error_log_path f.suite_log_path
+    run bin/"pachd"
   end 
 end
