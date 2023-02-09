@@ -1,4 +1,6 @@
 require "formula"
+require "language/go"
+require 'erb'
 
 class Pachd < Formula
   homepage "github.com/pachyderm/pachyderm"
@@ -10,17 +12,16 @@ class Pachd < Formula
   depends_on "etcd"
 
   def install
-    bin.install "pach-suite"
+    bin.install bin/"pach-suite"
   end
 
+  def suite_log_path
+    var/"log/suite.log"
+  end
+  
   service do
     run bin/"pach-suite"
-    log_path "/tmp/local.job.out"
-    error_log_path "/tmp/local.job.err"
+    log_path f.postgresql_log_path
+    error_log_path f.postgresql_log_path    
   end 
-
-  test do
-    system "#{bin}/pachctl version"
-  end
-
 end
