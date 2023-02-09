@@ -5,7 +5,7 @@ require 'erb'
 class Pachd < Formula
   homepage "github.com/pachyderm/pachyderm"
   version "v2.4.3"
-  url "https://github.com/acohen4/pach-suite/blob/master/pach-suite"
+  url "https://github.com/acohen4/pach-suite/blob/master/pach-suite?raw=true"
   sha256 "12efc4c18daaa283dbd6e334386496a308df2d19b3131e9b8d21e26908b1482e"
 
   depends_on "postgresql"
